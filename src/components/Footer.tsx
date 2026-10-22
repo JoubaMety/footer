@@ -27,7 +27,7 @@ export default ((opts?: FooterOptions) => {
 
   const Footer: QuartzComponent = ({ displayClass, cfg }: QuartzComponentProps) => {
     const year = new Date().getFullYear();
-    const startYear = opts?.startYear ?? -1;
+    const startYear = opts?.startYear;
     const links = opts?.links ?? [];
     return (
       <footer class={`${displayClass ?? ""}`}>
